@@ -28,16 +28,16 @@ Step 3: Put your credentials in the .env file.
 
 ```bash
 PORT=3000
-MONGODB\\\_URI=mongodb://localhost:27017
-DB\\\_NAME=YOUR\\\_DB\\\_NAME
-ACCESS\\\_TOKEN\\\_SECRET=GENERATE\\\_FROM\\\_GENERATE\\\_KEYS\\\_FILE\\\_IN\\\_HELPER
-REFRESH\\\_TOKEN\\\_SECRET=GENERATE\\\_FROM\\\_GENERATE\\\_KEYS\\\_FILE\\\_IN\\\_HELPER
+MONGODB\\\\\\\_URI=mongodb://localhost:27017
+DB\\\\\\\_NAME=YOUR\\\\\\\_DB\\\\\\\_NAME
+ACCESS\\\\\\\_TOKEN\\\\\\\_SECRET=GENERATE\\\\\\\_FROM\\\\\\\_GENERATE\\\\\\\_KEYS\\\\\\\_FILE\\\\\\\_IN\\\\\\\_HELPER
+REFRESH\\\\\\\_TOKEN\\\\\\\_SECRET=GENERATE\\\\\\\_FROM\\\\\\\_GENERATE\\\\\\\_KEYS\\\\\\\_FILE\\\\\\\_IN\\\\\\\_HELPER
 ```
 
 Step 4: To generate 256-bit keys for JWT
 
 ```bash
-node ./helpers/generate\\\_keys.js
+node ./helpers/generate\\\\\\\_keys.js
 ```
 
 Step 5: Install Redis (Linux Ubuntu)
@@ -52,23 +52,15 @@ Step 6: Run Redis Server (Linux Ubuntu)
 redis-server
 ```
 
-Step 7: Install MongoDB (Linux Ubuntu)
-
-See [https://docs.mongodb.com/manual/installation/](https://docs.mongodb.com/manual/installation/) for more infos
-
-Step 8: Run Mongo daemon
-
-```bash
-sudo service mongod start
 ```
 
-Step 9: Start the API by
+Step 7: Start the API by
 
 ```bash
 npm start
 ```
 
-Step 10 (Optional): Change the expiration time of Access Token and Refresh Token according to your needs by going inside the **`./helpers/jwt\\\_helper.js`** file.
+Step 10 (Optional): Change the expiration time of Access Token and Refresh Token according to your needs by going inside the **`./helpers/jwt\\\\\\\_helper.js`** file.
 
 ## Author
 
