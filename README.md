@@ -16,8 +16,7 @@ The application is **production ready**.
 Step 1: Clone the repo
 
 ```bash
-git clone https://github.com/trulymittal/API-Authentication-NodeJs.git
-```
+git clone https://github.com/bosebiswanath/Appauthenticationjsonwebtoken.git
 
 Step 2: cd into the cloned repo and run:
 
@@ -29,16 +28,16 @@ Step 3: Put your credentials in the .env file.
 
 ```bash
 PORT=3000
-MONGODB\_URI=mongodb://localhost:27017
-DB\_NAME=YOUR\_DB\_NAME
-ACCESS\_TOKEN\_SECRET=GENERATE\_FROM\_GENERATE\_KEYS\_FILE\_IN\_HELPER
-REFRESH\_TOKEN\_SECRET=GENERATE\_FROM\_GENERATE\_KEYS\_FILE\_IN\_HELPER
+MONGODB\\\_URI=mongodb://localhost:27017
+DB\\\_NAME=YOUR\\\_DB\\\_NAME
+ACCESS\\\_TOKEN\\\_SECRET=GENERATE\\\_FROM\\\_GENERATE\\\_KEYS\\\_FILE\\\_IN\\\_HELPER
+REFRESH\\\_TOKEN\\\_SECRET=GENERATE\\\_FROM\\\_GENERATE\\\_KEYS\\\_FILE\\\_IN\\\_HELPER
 ```
 
 Step 4: To generate 256-bit keys for JWT
 
 ```bash
-node ./helpers/generate\_keys.js
+node ./helpers/generate\\\_keys.js
 ```
 
 Step 5: Install Redis (Linux Ubuntu)
@@ -69,7 +68,7 @@ Step 9: Start the API by
 npm start
 ```
 
-Step 10 (Optional): Change the expiration time of Access Token and Refresh Token according to your needs by going inside the **`./helpers/jwt\_helper.js`** file.
+Step 10 (Optional): Change the expiration time of Access Token and Refresh Token according to your needs by going inside the **`./helpers/jwt\\\_helper.js`** file.
 
 ## Author
 
